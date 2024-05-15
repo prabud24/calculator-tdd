@@ -1,24 +1,29 @@
-# README
+Make sure you install the below mentioned ruby and postgres versions before moving to other steps.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Requirements
 
-Things you may want to cover:
+* Ruby 3.0.0
+* PostgreSQL
 
-* Ruby version
+1. Install dependencies - `bundle install`
+2. Congifure database.yml file by adding username, password and database name
+3. Run spec - `bundle exec rspec`
 
-* System dependencies
 
-* Configuration
+### Service file 
 
-* Database creation
+`app/services/string_calculator.rb`
 
-* Database initialization
 
-* How to run the test suite
+### Rspec file 
 
-* Services (job queues, cache servers, search engines, etc.)
+`spec/services/string_calculator_spec.rb`
 
-* Deployment instructions
 
-* ...
+### Results
+```
+........
+
+Finished in 0.03083 seconds (files took 0.80307 seconds to load)
+8 examples, 0 failures
+```
