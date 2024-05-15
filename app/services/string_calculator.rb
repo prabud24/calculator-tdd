@@ -9,7 +9,7 @@ class StringCalculator
 
     given_inputs = params_str.split(delimiters).map(&:to_i)
     negatives = given_inputs.select { |n| n < 0 }
-    raise "negative numbers not allowed #{negatives.join(', ')}" unless negatives.empty?
+    raise "negative numbers not allowed #{negatives.join(', ')}" if negatives.any?
 
     result = given_inputs.sum
     return result
