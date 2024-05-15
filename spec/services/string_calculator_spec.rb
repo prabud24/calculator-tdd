@@ -12,9 +12,14 @@ RSpec.describe StringCalculator, type: :model do
       expect(StringCalculator.add("9")).to eq(9)
     end
 
-     it "when given a two comma-separated numbers return the sum of two numbers" do
+    it "when given a two comma-separated numbers return the sum of two numbers" do
       expect(StringCalculator.add("1,5")).to eq(6)
     end
+
+    it "when given the multiple comma-separated numbers return the sum of the numbers" do
+      expect(StringCalculator.add("1,2,3")).to eq(6)
+    end
+
 
   end
 end
